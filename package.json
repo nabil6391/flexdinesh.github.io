@@ -2,21 +2,18 @@
   "name": "react-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://flexdinesh.github.io/",
+  "homepage": "http://nabil6391.github.io/",
   "scripts": {
     "start": "node scripts/start.js",
     "start:prod": "ENV=prod node scripts/start.js",
+    "clean": "npm rm -rf build",
     "prebuild": "npm run clean",
     "build": "node scripts/build.js",
-    "postbuild": "cp Readme.md build/Readme.md",
     "test": "node scripts/test.js --env=jsdom",
-    "clean": "rm -rf build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -39,7 +36,7 @@
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "node-sass": "^4.7.2",
@@ -48,7 +45,9 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
+    "react": "^16.2.0",
     "react-dev-utils": "^5.0.0",
+    "react-dom": "^16.2.0",
     "sass-loader": "^6.0.7",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
@@ -99,5 +98,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "dependencies": {}
 }

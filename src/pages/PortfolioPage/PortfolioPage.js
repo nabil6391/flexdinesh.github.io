@@ -1,48 +1,52 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import PortfolioItem from '@components/PortfolioItem';
-import ScrollToPrevious from '@components/ScrollToPrevious';
-import portfolioItems from './portfolio-items';
+import './style.scss'
 
-import './style.scss';
+import projects from '../../data/projects';
+import lib from '../../libs/utils'
 
-const PortfolioPage = (props, context) => {
-  const {
-    theme: { colorPrimary, colorAlternate, textAlternate, bgPrimary }
-  } = context;
+import Search from '../../components/Search/Search';
+import Project from './../../components/Project/Project';
 
-  return (
-    <div className="portfolio-page" style={{ backgroundColor: bgPrimary }}>
-      <div className="content-grid">
-        <h1 style={{ color: colorPrimary }}>Portfolio</h1>
-        <div className="portfolio-wrapper">
-          <style jsx="true">
-            {`
-              .portfolio-item {
-                background-color: ${colorPrimary};
-                color: ${textAlternate};
-              }
-              .portfolio-item a {
-                color: ${textAlternate};
-              }
-              .portfolio-item__links a:hover {
-                border-bottom: 2px solid ${colorAlternate};
-              }
-            `}
-          </style>
-          {/* <PortfolioItem /> */}
-          {portfolioItems.map((item, i) => (
-            <PortfolioItem render={item.render} key={i} />
-          ))}
+class PortfolioPage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchText: '',
+      projects: projects
+    };
+    this.inputChange = this.inputChange.bind(this);
+  }
+
+  inputChange(event) {
+        // something was added in the filter. We had AND matching right now.
+    // let useState = (event.target.value.indexOf(this.state.searchText) === 0);
+    this.setState({
+      searchText: event.target.value,
+      projects: lib.filterProjects( projects, event.target.value)
+    }, () => {
+      // lib.focusSearch();
+    });
+  }
+
+  render() {
+    let projectDOM = this.state.projects.map((p) =>
+      <Project key={p.id} {...p} />
+    );
+    // empty list of projects
+    if (projectDOM.length === 0) {
+      projectDOM = (<div className="noResults">No results found</div>);
+    }
+    return (
+      <div className="portfolio-page"  >
+        <Search changeHandler={this.inputChange} />
+        <div className="content">
+          {projectDOM}
         </div>
-      </div>
-      <ScrollToPrevious pageSelector=".about-page" />
-    </div>
-  );
-};
+      </ div>
+    );
+  }
 
-PortfolioPage.contextTypes = {
-  theme: PropTypes.any
-};
+}
 
 export default PortfolioPage;
