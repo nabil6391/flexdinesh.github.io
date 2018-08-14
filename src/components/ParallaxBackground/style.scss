@@ -1,18 +1,14 @@
 @function random-color() {
   $value: "black";
   @if random(5) == 1 {
-   $value: "#DAF7A6";
-  }
-  @else if random(5) == 2{
+    $value: "#DAF7A6";
+  } @else if random(5) == 2 {
     $value: "#FFC300";
-  }
-  @else if random(5) == 3{
+  } @else if random(5) == 3 {
     $value: "#FF5733";
-  }
-  @else if random(5) == 4{
+  } @else if random(5) == 4 {
     $value: "#82E0AA";
-  }
-  @else {
+  } @else {
     $value: "#85C1E9";
   }
   @return unquote($value);
@@ -36,7 +32,7 @@ $shadows-big: multiple-box-shadow(100);
 .parallax {
   position: fixed;
   z-index: 1;
-  
+
   #stars1 {
     width: 1px;
     height: 1px;
@@ -44,7 +40,7 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-small;
     animation: animStar 150s linear infinite;
-  
+
     &:after {
       content: " ";
       position: absolute;
@@ -56,7 +52,7 @@ $shadows-big: multiple-box-shadow(100);
       box-shadow: $shadows-small;
     }
   }
-  
+
   #stars2 {
     width: 2px;
     height: 2px;
@@ -64,7 +60,7 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-medium;
     animation: animStar 100s linear infinite;
-  
+
     &:after {
       content: " ";
       position: absolute;
@@ -76,7 +72,7 @@ $shadows-big: multiple-box-shadow(100);
       box-shadow: $shadows-medium;
     }
   }
-  
+
   #stars3 {
     width: 3px;
     height: 3px;
@@ -84,7 +80,7 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-big;
     animation: animStar 50s linear infinite;
-  
+
     &:after {
       content: " ";
       position: absolute;
@@ -96,12 +92,12 @@ $shadows-big: multiple-box-shadow(100);
       box-shadow: $shadows-big;
     }
   }
-  
+
   @keyframes animStar {
     from {
       transform: translateY(-2000px);
     }
-  
+
     to {
       transform: translateY(0px);
     }

@@ -1,1 +1,1 @@
-export { default } from './ScrollToPrevious';
+export {default} from './ScrollToPrevious';

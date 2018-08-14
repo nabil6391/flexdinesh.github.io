@@ -9,6 +9,16 @@ export default class Search extends Component {
 						 autoComplete="off" spellCheck="false"
 						 className="search" onChange={this.props.changeHandler} />
 
+        //   <div>
+		//   <style jsx="true">
+        //     {`              .search:focus {
+		// 		border-bottom-color: ${colorAlternate};
+        //       }
+        //  `}
+        //   </style>
+        //   {/* <PortfolioItem /> */}
+        // </div>
+
 		)
 	}
 }

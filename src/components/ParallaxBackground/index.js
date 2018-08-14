@@ -1,1 +1,1 @@
-export { default } from './ParallaxBackground';
+export {default} from './ParallaxBackground';

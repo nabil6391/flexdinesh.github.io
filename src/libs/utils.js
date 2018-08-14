@@ -8,29 +8,26 @@ export default {
 		console.log('I was triggered during render')
 		let p = [];
 
-		query = query.toLowerCase(); // lower case better searching
-		let qrArr = query.split(' ');
-		let fail = false;
-		for (let i of projects) {
-			// match against all space separated queries
-			fail = false;
-			for (let q of qrArr) {
-				// take single query
-				let check = (i['name'].toLowerCase().search(q) > -1) || (JSON.stringify(i['tags']).search(q) > -1)
-					|| (i['date'].toLowerCase().search(q) > -1);
-				if (!check) {
-					fail = true;
-					break;
-				}
-			}
-			// if matched
-			if (!fail) {
-				p.push(i);
-			}
-		}
+        // if (!query)
+        //     return p;
+
+	 // lower case better searching
+		let qrArr = query.toLowerCase().split(' ');
+
+        p = projects.filter(uni => qrArr.some(q =>
+			uni.name.toLowerCase().search(q) > -1 ||
+            JSON.stringify(uni.tags).toLowerCase().search(q) > -1 ||
+			uni.date.toLowerCase().search(q) > -1));
+
+        // let s = "";
+        // for (let i of p) {
+        //     s = s + "\n* " +
+			// 	"[" + i.name + "](" + i.github+")";
+        // }
+        // console.log(s);
+
 		return p;
 	},
-
 	/*
 	 * get project by id
 	 */

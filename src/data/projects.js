@@ -2,580 +2,679 @@
  * Projects listing
  */
 
+// let name = 'Nab8il MOsharraf'
+
 let projects = [
-	{
-		id: 'clipjump',
-		name: 'Clipjump',
-		desc: [
-			'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-			'It supports extension via plugins, has configurable hotkeys and enables users to write scripts via a feature known as Clipjump Custom.'
-		],
-		date: '2013-16',
-		github: 'https://github.com/aviaryan/Clipjump',
-		weight: 2,
-		websites: ['http://clipjump.sourceforge.net'],
-		tags: ['autohotkey', 'clipboard']
-	},
-	{
-		id: 'shach',
-		name: 'Shach',
-		desc: ['Shach is a compiler written in Yacc/Lex that converts a common language to Bash and Batch.'],
-		github: 'https://github.com/aviaryan/shach/blob/master/REPORT.md',
-		date: '2017',
-		tags: ['compiler', 'cpp']
-	},
-	{
-		id: 'su4ahk',
-		name: 'Sublime 4 AutoHotkey',
-		desc: [
-			'A Sublime Text addon to do AutoHotkey coding in the editor. Provides much more than a Sublime Text package.'],
-		github: 'https://github.com/aviaryan/Sublime4Autohotkey',
-		date: '2013-14',
-		tags: ['autohotkey', 'sublime-text']
-	},
-	{
-		id: 'hinix',
-		name: 'Hinix',
-		desc: [
-			'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
-			'Champion Hackathon project.'],
-		date: '2016',
-		github: 'https://github.com/aviaryan/Hinix',
-		tags: ['android', 'java', 'game'],
-		weight: 1,
-		websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
-	},
-	{
-		id: 'cfbuddy',
-		name: 'CF Buddy',
-		date: '2017',
-		desc: ['App that uses CodeForces API to show programming problems, user profiles, blog posts and contests.'],
-		tags: ['android', 'java', 'codeforces'],
-		github: 'https://github.com/aviaryan/CFBuddy'
-	},
-	{
-		id: 'anyaudio',
-		name: 'AnyAudio',
-		desc: ['AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.'],
-		date: '2016-present',
-		tags: ['flask', 'backend', 'python'],
-		github: 'https://github.com/anyaudio',
-		githubRepo: 'https://github.com/anyaudio/anyaudio-server',
-		websites: ['http://anyaudio.in']
-	},
-	{
-		id: 'pop-patna',
-		name: 'Popular Places in Patna',
-		desc: ['A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.'],
-		date: '2017',
-		tags: ['webpack', 'webapp', 'javascript'],
-		github: 'https://github.com/aviaryan/pop-places-patna',
-		websites: ['http://aviaryan.in/pop-places-patna/']
-	},
-	{
-		id: 'typ3r',
-		name: 'tYp3r',
-		desc: ['dA aNn0Y1Ng t3Xt g3NeRa7or (The annoying text generator :-P)'],
-		date: '2017',
-		tags: ['webapp'],
-		github: 'https://github.com/aviaryan/tYp3r',
-		websites: ['http://typ3r.aavi.me']
-	},
-	{
-		id: 'typ3rjs',
-		name: 'typ3r.js',
-		date: '2017',
-		desc: ['JavaScript library to convert sane human readable text to a not s0 hUMaN Re@dAbLE t3xT. No external dependencies.'],
-		tags: ['javascript', 'npm'],
-		github: 'https://github.com/aviaryan/typ3r.js'
-	},
-	{
-		id: 'bigeval',
-		name: 'BigEval.js',
-		date: '2015-16',
-		weight: 1,
-		desc: ['JavaScript library to evaluate mathematical expressions from strings. Supports all advanced mathematics expressions.'],
-		tags: ['javascript', 'npm'],
-		github: 'https://github.com/aviaryan/BigEval.js'
-	},
-	{
-		id: 'algos',
-		name: 'Algos',
-		date: '2017-present',
-		desc: ['Implementation of popular algorithms and data structures in popular languages. Lead maintainer of the project.'],
-		tags: ['algorithm', 'data-structures'],
-		weight: -1,
-		github: 'https://github.com/iiitv/algos'
-	},
-	{
-		id: 'resume',
-		name: 'Resume',
-		date: '2016',
-		desc: ['Pseudo dynamic resume template created in Jekyll. Change YAML files to update resume.'],
-		tags: ['jekyll', 'website'],
-		github: 'https://github.com/aviaryan/resume',
-		websites: ['http://aviaryan.in/resume/']
-	},
-	{
-		id: 'ahkst',
-		name: 'AHK package Sublime',
-		date: '2014',
-		desc: ['AutoHotkey package for Sublime Text. Now discontinued in favor of the community package.'],
-		tags: ['autohotkey', 'sublime-text'],
-		github: 'https://github.com/aviaryan/AutoHotkey'
-	},
-	{
-		id: 'stealFunc',
-		name: 'Steal Func',
-		date: '2014',
-		desc: ['Library to extract the minimum code needed from an external library OR say it strips out unused code.'],
-		tags: ['autohotkey', 'regex', 'scripting'],
-		weight: 2,
-		github: 'https://github.com/aviaryan/autohotkey-scripts/blob/master/Tools/stealFuncfromLib.ahk'
-	},
-	{
-		id: 'nologin',
-		name: 'Awesome No Login Web Apps',
-		date: '2016-17',
-		desc: ['Curated list of awesome web apps that work without requesting you to create an account.'],
-		tags: ['awesome-list'],
-		github: 'https://github.com/aviaryan/awesome-no-login-web-apps'
-	},
-	{
-		id: 'kissdown',
-		name: 'KissAnime Batch Downloader',
-		date: '2017',
-		desc: ['Scripts that fetch download links of any series on KissAnime, KissAsian or KissCartoon and gives them to you in the form of a list.'],
-		tags: ['javascript', 'hacking'],
-		github: 'https://github.com/aviaryan/Kissanime-Batch-Downloader'
-	},
-	{
-		id: 'udportfolio',
-		name: 'Simple Portfolio',
-		date: '2017',
-		weight: -1,
-		desc: ['A simple, lightweight, responsive portfolio design.'],
-		tags: ['website'],
-		github: 'https://github.com/aviaryan/ud-portfolio',
-		websites: ['http://aviaryan.in/ud-portfolio/']
-	},
-	{
-		id: 'last2imgur',
-		name: 'Last 2 Imgur',
-		date: '2017',
-		desc: ['Alfred workflow to upload the last screenshot taken to Imgur + (delete and minify image)'],
-		tags: ['alfred', 'scripting'],
-		github: 'https://github.com/aviaryan/alfred-last2imgur'
-	},
-	{
-		id: 'abc',
-		name: 'ABC',
-		date: '2017-present',
-		desc: ['Commandline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.',
-			'Source databases like Postgres, Mongo, MySQL, MSSQL etc are supported.'],
-		tags: ['golang', 'cli'],
-		weight: 1,
-		github: 'https://github.com/appbaseio/abc'
-	},
-	{
-		id: 'catalog',
-		name: 'Anime Catalog',
-		date: '2017',
-		desc: ['Full stack app that allows users to login and list down favorite anime series.'],
-		tags: ['webapp', 'backend', 'flask', 'python'],
-		github: 'https://github.com/aviaryan/ud-catalog'
-	},
-	{
-		id: 'website',
-		name: 'My Blog/Website',
-		date: '2013-16',
-		desc: ['Blog + website written in Jekyll.'],
-		tags: ['website', 'blog', 'jekyll'],
-		github: 'https://github.com/aviaryan/aviaryan.github.com',
-		websites: ['http://aviaryan.github.io']
-	},
-	{
-		id: 'dls',
-		name: 'DLS',
-		date: '2016',
-		desc: [
-			'Direct Link Service. A pastebin for text and uploading files where you can choose a custom link.',
-			'Also file and text will be accessible/downloadable from easy to remember direct links.'],
-		tags: ['flask', 'backend', 'python'],
-		github: 'https://github.com/aviaryan/dls',
-		websites: ['http://dls.aviaryan.in/']
-	},
-	{
-		id: 'orga-server',
-		name: 'Open Event Server',
-		date: '2016-17',
-		desc: ['API server to enable organizers to manage events from concerts to conferences and meet-ups. Part of the open event ecosystem.',
-			'Deployable on Digital Ocean, Google Cloud, EC 2 and Heroku.'],
-		tags: ['flask', 'backend', 'python'],
-		github: 'https://github.com/fossasia/open-event-orga-server',
-		weight: 1,
-		websites: ['https://open-event-dev.herokuapp.com', 'https://eventyay.com']
-	},
-	{
-		id: 'competitive',
-		name: 'Competitive Codes',
-		date: '2015-present',
-		desc: ['This project contains all the codes I made in my journey of competitive programming.',
-			"I prefer to write in CPP. Have lost interest in competitive programming recently, more aligned towards development."],
-		tags: ['algorithm', 'data-structures', 'cpp'],
-		github: 'https://github.com/aviaryan/competitive'
-	},
-	{
-		id: 'sub-notebook',
-		name: 'Sublime Notebook',
-		date: '2017-present',
-		desc: [
-			'Sublime Notebook is an attempt to use Sublime Text as a complete note taking application.',
-			'It comes with all sorts of cool features like note searching, hierarchical organization, password encryption, cloud sync and git backups.'
-		],
-		tags: ['sublime-text', 'python'],
-		github: 'https://github.com/aviaryan/SublimeNotebook',
-		websites: ['https://medium.com/aviaryan/sublime-notebook-an-attempt-to-use-sublime-text-as-my-note-taking-application-b8d846c47905#.hy8alq2ip']
-	},
-	{
-		id: 'lcpscancode',
-		name: 'CC Licenses Parser for Scancode',
-		date: '2017',
-		desc: ['This script scans Creative Commons License pages and generate scancode data files.'],
-		tags: ['scripting', 'python', 'regex'],
-		weight: -2,
-		github: 'https://github.com/aviaryan/cc-licenses-parser-scancode'
-	},
-	{
-		id: 'lc3-sublime',
-		name: 'LC3 Sublime',
-		date: '2015',
-		desc: ['A Package to provide syntax highlighting for LC3 .asm files in Sublime Text.',
-			'"Goto Symbol" feature in Sublime Text corresponds to labels in the assembly code.'],
-		tags: ['sublime-text', 'regex'],
-		github: 'https://github.com/aviaryan/lc3-sublime'
-	},
-	{
-		id: 'close-folder',
-		name: 'Close Folder',
-		date: '2015',
-		desc: ['A simple Sublime Text plugin to close all open files of current directory or all open files inside some directory.',
-			'Supports Sublime Text 2 and 3. Available on Package Control as CloseFolder'],
-		tags: ['sublime-text'],
-		github: 'https://github.com/aviaryan/CloseFolder'
-	},
-	{
-		id: 'quotesOnTheGo',
-		name: 'Quotes On The Go',
-		date: '2017',
-		desc: ['Command line application that shows you a random quote using forismatic.com API.'],
-		tags: ['golang', 'cli'],
-		weight: -2,
-		github: 'https://github.com/aviaryan/quotesOnTheGo'
-	},
-	{
-		id: 'csbed',
-		name: 'Counter Strike Bot Editor',
-		date: '2013',
-		desc: ['Counter Strike 1.6/CZ complete bot profiles editor with a GUI. Last updated on Jan 2013.'],
-		tags: ['autohotkey', 'gui'],
-		github: 'https://github.com/aviaryan/Counter-Strike-Bot-Editor'
-	},
-	{
-		id: 'series-renamer',
-		name: 'Series Renamer',
-		date: '2015',
-		desc: ['Python script that connects to thetvdb.com and renames your TV series in any fashion you want.'],
-		tags: ['python', 'cli', 'regex', 'pip'],
-		github: 'https://github.com/aviaryan/series-renamer',
-		weight: 1,
-		websites: ['http://aviaryan.github.io/series-renamer/']
-	},
-	{
-		id: 'gmd',
-		name: 'Github Markdown Preview',
-		date: '2016',
-		desc: ['A simple webapp to preview markdown text (GFM) using Github API. Also allows you to print markdown document.'],
-		tags: ['webapp'],
-		github: 'https://github.com/aviaryan/javascripts/tree/gh-pages/github.md',
-		websites: ['http://gmd.aavi.me/']
-	},
-	{
-		id: 'gig',
-		name: 'Gradient Image generator',
-		date: '2015',
-		desc: ['A tool to convert CSS gradients to image files. Height and width of the image can be set by the user.'],
-		tags: ['webapp'],
-		github: 'https://github.com/aviaryan/javascripts#gradient-image-generator-gig',
-		websites: ['http://gig.aavi.me/']
-	},
-	{
-		id: 'puzzle8',
-		name: 'Puzzle-8',
-		date: '2016',
-		desc: ['8-Puzzle game in Android. Includes automatic puzzle solver.'],
-		tags: ['android', 'java', 'game'],
-		github: 'https://github.com/aviaryan/CSwA_puzzle8'
-	},
-	{
-		id: 'nkm-server',
-		name: 'NowKnowMore server',
-		date: '2016',
-		desc: [
-			'Now Know More is a news aggregation service that allows you to follow any topic of your interest and get latest news on the same.',
-			'The topic can by anything from "Good Recipes" to "Stock Market" to "Fitness Tips".',
-			'The whole thing was built in 8 hrs with swagger API documentation and integrated unit testing.'],
-		tags: ['backend', 'flask', 'python'],
-		github: 'https://github.com/aviaryan/nkm-server'
-	},
-	{
-		id: 'dockerfiles',
-		name: 'Dockerfiles',
-		date: '2016',
-		desc: ['Free, useful Docker images built by me.'],
-		tags: ['docker'],
-		github: 'https://github.com/aviaryan/Dockerfiles'
-	},
-	{
-		id: 'emojiui',
-		name: 'EmojiUI',
-		date: '2016',
-		desc: ['Offline and cross-platform emoji finding tool using Electron.'],
-		tags: ['npm', 'javascript', 'electron'],
-		github: 'https://github.com/aviaryan/emojiui'
-	},
-	{
-		id: 'lxiym-pdf',
-		name: 'Learn X in Y minutes - PDF',
-		date: '2015-16',
-		desc: ['Small code-oriented PDFs to master any programming language.'],
-		tags: ['python', 'scripting'],
-		github: 'https://github.com/aviaryan/learnxinyminutes-pdf'
-	},
-	{
-		id: 'ots-2016-cal',
-		name: 'OTS 2016 Google Calendar',
-		date: '2016',
-		desc: ['A quick and dirty little thing that takes OTS 2016 schedule (json) and creates Google Calendars (and iCalendars .ics) out of it.'],
-		tags: ['golang', 'scripting', 'ci'],
-		github: 'https://github.com/aviaryan/opentechsummit-2016-calendar'
-	},
-	{
-		id: 'ahk-ci',
-		name: 'AutoHotkey CI',
-		date: '2016',
-		desc: ['Example project to demonstrate how to use AppVeyor to set up continuous testing for an AutoHotkey project.'],
-		tags: ['autohotkey', 'scripting', 'ci'],
-		github: 'https://github.com/aviaryan/Ahk-CI-Example',
-		websites: ['https://autohotkey.com/boards/viewtopic.php?f=6&t=16168']
-	},
-	{
-		id: 'collegare-server',
-		name: 'Collegare Server',
-		date: '2015',
-		desc: ['Unofficial college\'s social networking platform. I worked on the backend.'],
-		tags: ['php', 'backend'],
-		github: 'https://github.com/aviaryan/collegare-server'
-	},
-	{
-		id: 'pythons',
-		name: 'Pythons',
-		date: '2016',
-		desc: ['Little python scripts I made to make my life easier. Scripts like Twitter follow bot, emoji searching tool, encrypt/decrypt tool and so on.'],
-		tags: ['python', 'scripting'],
-		github: 'https://github.com/aviaryan/pythons'
-	},
-	{
-		id: 'ahks',
-		name: 'AutoHotkey scripts',
-		date: '2013-16',
-		desc: ['A collection of Autohotkey scripts and libraries authored by me'],
-		tags: ['autohotkey', 'scripting'],
-		weight: 1,
-		github: 'https://github.com/aviaryan/autohotkey-scripts'
-	},
-	{
-		id: 'gcide',
-		name: 'GCIDE JSON',
-		date: '2015-16',
-		desc: ['GCIDE dictionary in json format. Also includes a command-line dictionary application.'],
-		tags: ['python', 'scripting', 'scraping'],
-		github: 'https://github.com/aviaryan/gcide-dictionary-json'
-	},
-	{
-		id: 'bootstrap-chm',
-		name: 'Bootstrap CHM',
-		date: '2015-16',
-		desc: ['Bootstrap documentation in chm, complete with Index and TOC. Especially suited for Windows based developers.'],
-		tags: ['python', 'scripting', 'scraping'],
-		github: 'https://github.com/aviaryan/bootstrap-chm'
-	},
-	{
-		id: 'algorithms-course',
-		name: 'Algorithms 101',
-		date: '2015-16',
-		desc: ['Algorithm implementations from my 4th semester Algorithms 101 course.'],
-		tags: ['cpp', 'algorithm', 'data-structures'],
-		github: 'https://github.com/aviaryan/algorithms-course'
-	},
-	{
-		id: 'brain-games',
-		name: 'Brain Games',
-		date: '2015',
-		desc: [
-			'Games to boost one\'s brain, written in Python using Pyglet. Includes 6 different exciting games.',
-			'Pre-compiled binaries available for Windows.'
-		],
-		weight: 2,
-		tags: ['python', 'game', 'gui'],
-		github: 'https://github.com/aviaryan/BrainGames'
-	},
-	{
-		id: 'ahk-best',
-		name: 'Ahk Best Practises',
-		date: '2016',
-		desc: [
-			'Good practices in AutoHotkey coding that will help avoid bugs and make your code more readable'
-		],
-		tags: ['autohotkey'],
-		github: 'https://github.com/aviaryan/Ahk-Best-Practices'
-	},
-	{
-		id: 'pop-movies',
-		name: 'Popular Movies',
-		date: '2016',
-		desc: ['An app to showcase trending and popular movies.'],
-		tags: ['android', 'java'],
-		github: 'https://github.com/aviaryan/PopularMovies'
-	},
-	{
-		id: 'ini-translator',
-		name: 'INI Translator',
-		date: '2013',
-		desc: [
-			'A program to translate ini-formatted files (key=value) in one go. Supports all popular formats.',
-			'Uses scraping for Google Translate to achieve the results.'
-		],
-		tags: ['autohotkey', 'scripting', 'scraping'],
-		github: 'https://github.com/aviaryan/initranslator'
-	},
-	{
-		id: 'shape-recog',
-		name: 'Shape Recognition',
-		date: '2015',
-		desc: [
-			'Shape Recog is a figure analyzer and synthesizer. It corrects the figure you have drawn to fit a known geometrical representation.',
-			'The developed version only checks if it\'s square, rectangle, triangle, circle, line or INVALID.'
-		],
-		tags: ['autohotkey', 'maths', 'gui'],
-		github: 'https://github.com/aviaryan/shape-recog'
-	},
-	{
-		id: 'highlighter-ahk',
-		name: 'AutoHotkey Syntax Highlighter',
-		date: '2014',
-		desc: ['AutoHotkey Syntax Highlighter Brush with Zenburn and GitHub themes'],
-		tags: ['javascript', 'regex'],
-		github: 'https://github.com/aviaryan/highlighter-ahk-zenburn'
-	},
-	{
-		id: 'light-ahk',
-		name: 'Light AHK',
-		date: '2014',
-		desc: ['Really lightweight syntax highlighting for AutoHotkey. Only 6.4kb non-gzipped overhead.',
-			'This includes syntax highlighting library + css styles.'],
-		tags: ['javascript', 'regex'],
-		github: 'https://github.com/aviaryan/lightAHK'
-	},
-	{
-		id: 'ini-hl',
-		name: 'INI Highlighter',
-		date: '2013-14',
-		desc: ['Syntax Highlighter Brush for INI format'],
-		tags: ['javascript', 'regex'],
-		github: 'https://github.com/aviaryan/lightAHK'
-	},
-	{
-		id: 'wtfeed',
-		name: 'What the Feed',
-		date: '2016',
-		desc: [
-			'What The Feed is a social media aggregration platform that helps you follow related social media accounts at once.',
-			'Suppose you are interested in some topic, say "Indian Finance", WTF will automatically find the leading social ' +
-				' media accounts for that topic, follow their posts and provide you with an aggregrated feed.',
-			'Twitter, Instagram and Tumblr are supported at the moment.'
-		],
-		tags: ['python', 'backend', 'django'],
-		github: 'https://github.com/iiitv/hackathon-fullstack-server'
-	},
-	{
-		id: 'portfolio',
-		name: 'Portfolio',
-		date: '2017-present',
-		desc: [
-			'My open source projects portfolio. Built using React, React Router and Redux.',
-			'My first open source React project.'
-		],
-		tags: ['webapp', 'react', 'javascript'],
-		github: 'https://github.com/aviaryan/work',
-		websites: ['http://aviaryan.in/work']
-	},
-	{
-		id: 'alfred-clc',
-		name: 'Alfred CLC',
-		date: '2017',
-		desc: [
-			'Powerful calculator for Alfred. Supports advanced expressions and unit conversions.'
-		],
-		tags: ['alfred', 'scripting'],
-		github: 'https://github.com/aviaryan/alfred-clc',
-		websites: ['https://www.alfredforum.com/topic/10652-clc-powerful-calculator-for-alfred/']
-	},
-	{
-		id: 'alfred-google-search',
-		name: 'Alfred Google Search',
-		date: '2017',
-		desc: [
-			'Alfred workflow to do inline google searches (open URL or copy to clipboard).'
-		],
-		tags: ['alfred', 'scripting'],
-		github: 'https://github.com/aviaryan/alfred-google-search',
-		websites: ['https://www.alfredforum.com/topic/10674-google-inline-search-open-url-copy-to-clipboard/']
-	},
-	{
-		id: 'gsearch',
-		name: 'Google Search API',
-		date: '2017',
-		weight: 1,
-		desc: [
-			'Google Search unofficial API for Python with no external dependencies.',
-			'Full Unicode support and works with Python 2 & 3.'
-		],
-		tags: ['python', 'scraping', 'pip'],
-		github: 'https://github.com/aviaryan/python-gsearch',
-	},
-	{
-		id: 'vscodenotebook',
-		name: 'VSCode Notebook',
-		date: '2018-present',
-		weight: 1,
-		desc: [
-			'VSCode Notebook is an attempt to use VSCode as a complete note taking application.',
-			'It comes with all sorts of cool features like note searching, hierarchical organization, password encryption, cloud sync and git backups.'
-		],
-		tags: ['python', 'vscode'],
-		github: 'https://github.com/aviaryan/VSCodeNotebook',
-	},
-	{
-		id: 'chattt',
-		name: 'Chattt',
-		date: '2018',
-		desc: [
-			'Chat without leaving your terminal'
-		],
-		tags: ['javascript', 'npm', 'cli'],
-		github: 'https://github.com/aviaryan/chattt',
-	}
+    {
+        id: 'quran',
+        name: 'Al Quran (Tafsir & by Word)',
+        desc: [
+            'Al Quran (Tafsir & by Word) is a Quran study tool for all.Distributed on Play Store with 4.9+ rating and 700000+ downloads '
+        ],
+        date: '2015-',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.green'],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'quranios',
+        name: 'Al Quran (Tafsir & by Word) iOS',
+        desc: [
+            'Al Quran (Tafsir & by Word) is a Quran study tool for all.Distributed on Play Store with 4.9+ rating and 700000+ downloads '
+        ],
+        date: '2015-',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.green'],
+        tags: ['android'],
+        role: 'Team Member'
+    },
+    {
+        id: 'hadith',
+        name: 'Hadith Collection (All in one)',
+        desc: [
+            'Hadith Collection (All in one) is an ultimate collection of Hadith of Prophet Muhammad (ﷺ). The app contains 41000+ hadith from most accepted and authentic Hadith books. Distributed on Play Store with 4.9+ rating'
+        ],
+        date: '2016',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.hadith'],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'hisnulmuslim',
+        name: 'Dua & Zikr (Hisnul Muslim)',
+        desc: [
+            'An easy to use app which contains authentic Du\'a and Zikr for a muslim\'s daily supplication and for special occasions. It contains islamic duas for daily day to day activities, from day to night. Distributed on Play Store with 4.9+ rating'
+        ],
+        date: '2015-',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.hisnulmuslim'],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'hisnulmuslimios',
+        name: 'Dua & Zikr (Hisnul Muslim) iOS',
+        desc: [
+            'An easy to use app which contains authentic Du\'a and Zikr for a muslim\'s daily supplication and for special occasions. It contains islamic duas for daily day to day activities, from day to night. Distributed on Play Store with 4.9+ rating'
+        ],
+        date: '2015-',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.hisnulmuslim'],
+        tags: ['android'],
+        role: 'Manager'
+    },
+    {
+        id: 'salatbn',
+        name: 'অর্থপূর্ণ নামায (সালাত) শব্দসহ',
+        desc: [
+            'অর্থপূর্ণ নামায (সলাত) এমন একটি অ্যাাপ যার দ্বারা আপনি নামাযের পঠিত সূরা, তসবিহ, দোআ ইত্যাদির অর্থ (প্রতিটি শব্দের অর্থ সহ) শিখতে পারবেন'
+        ],
+        date: '2016',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.salatbn'],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'islamicquiz',
+        name: 'ইসলামিক কুইজ (Islamic Quiz)',
+        desc: [
+            'ইসলামিক কুইজ একটি অতি সাধারণ এবং নিত্যদিনের ব্যবহার্য একটি অ্যাপ যা আপনাকে একঘেয়ামি দূর করিয়ে খেলতে খেলতে কিছু ইসলামি জ্ঞানার্জনের সু্যোগ করে দিবে ইনশাআল্লাহ।'
+        ],
+        date: '2016',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.islamicquiz'],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'muslimscholars',
+        name: 'Muslim Scholars & Companions',
+        desc: [
+            'Muslim Scholars & Companions is the most extensive, interactive and up-to-date Muslim Scholar Database.'
+        ],
+        date: '2017',
+        weight: 9,
+        websites: ['https://play.google.com/store/apps/details?id=com.greentech.muslimscholars'],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'revvey',
+        name: 'REVVEY for HigherStudyAbroad ',
+        desc: [
+            'App for students facilitating the process of searching, choosing and applying for universities abroad. Uses parse server for online data'
+        ],
+        date: '2017',
+        weight: 4,
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'sccapp',
+        name: 'SYLHET CITY CORPORATION APP',
+        desc: [
+            'Official Government Approved App. Uses google maps Api, retrofit for rest services with caching, login system, ability to take picture and upload to server, Uses glide for image loading.'
+        ],
+        date: '2017',
+        weight: 4,
+        websites: ['https://goo.gl/ecjmzo '],
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'applocker',
+        name: 'App Locker',
+        desc: [
+            'App Locker'
+        ],
+        date: '2018',
+        weight: 4,
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    {
+        id: 'openshop',
+        name: 'Open Shop Android Ecommerce App',
+        desc: [
+            'Android E Commerce App'
+        ],
+        date: '2018',
+        weight: 4,
+        tags: ['android'],
+        role: 'Lead Developer'
+    },
+    // {
+    //     id: 'muslimtube',
+    //     name: 'Muslim Tube',
+    //     desc: [
+    //         'Muslim Scholars & Companions is the most extensive, interactive and up-to-date Muslim Scholar Database.'
+    //     ],
+    //     date: '2017',
+    //     weight: 9,
+    //     websites: ['https://play.google.com/store/apps/details?id=com.greentech.muslimscholars'],
+    //     tags: ['android'],
+    //     role: 'Lead Developer'
+    // },
+    {
+        id: 'hinix',
+        name: 'Hinix',
+        desc: [
+            'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
+            'Champion Hackathon project.'],
+        date: '2016',
+        github: 'https://github.com/aviaryan/Hinix',
+        tags: ['android', 'java', 'game'],
+        weight: 1,
+        websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
+    },
+    {
+        id: 'higherstudyabroad',
+        name: 'Higher Study Abroad Website',
+        desc: ['Website for students facilitating the process of searching, choosing and applying for universities abroad'],
+        date: '2016-present',
+        tags: ['web', 'react', 'python'],
+        websites: ['http://www.higherstudyabroad.com']
+    },
+    // {
+    //     id: 'anyaudio',
+    //     name: 'AnyAudio',
+    //     desc: ['AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.'],
+    //     date: '2016-present',
+    //     tags: ['flask', 'backend', 'python'],
+    //     github: 'https://github.com/anyaudio',
+    //     githubRepo: 'https://github.com/anyaudio/anyaudio-server',
+    //     websites: ['http://anyaudio.in']
+    // },
+    // {
+    //     id: 'pop-patna',
+    //     name: 'Popular Places in Patna',
+    //     desc: ['A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.'],
+    //     date: '2017',
+    //     tags: ['webpack', 'webapp', 'javascript'],
+    //     github: 'https://github.com/aviaryan/pop-places-patna',
+    //     websites: ['http://aviaryan.in/pop-places-patna/']
+    // },
+    // {
+    //     id: 'nologin',
+    //     name: 'Awesome No Login Web Apps',
+    //     date: '2016-17',
+    //     desc: ['Curated list of awesome web apps that work without requesting you to create an account.'],
+    //     tags: ['awesome-list'],
+    //     github: 'https://github.com/aviaryan/awesome-no-login-web-apps'
+    // },
+    // {
+    //     id: 'catalog',
+    //     name: 'Anime Catalog',
+    //     date: '2017',
+    //     desc: ['Full stack app that allows users to login and list down favorite anime series.'],
+    //     tags: ['webapp', 'backend', 'flask', 'python'],
+    //     github: 'https://github.com/aviaryan/ud-catalog'
+    // },
+    // {
+    //     id: 'website',
+    //     name: 'My Blog/Website',
+    //     date: '2013-16',
+    //     desc: ['Blog + website written in Jekyll.'],
+    //     tags: ['website', 'blog', 'jekyll'],
+    //     github: 'https://github.com/aviaryan/aviaryan.github.com',
+    //     websites: ['http://aviaryan.github.io']
+    // },
+    // {
+    //     id: 'quotesOnTheGo',
+    //     name: 'Quotes On The Go',
+    //     date: '2017',
+    //     desc: ['Command line application that shows you a random quote using forismatic.com API.'],
+    //     tags: ['golang', 'cli'],
+    //     weight: -2,
+    //     github: 'https://github.com/aviaryan/quotesOnTheGo'
+    // },
+    {
+        id: 'puzzle8',
+        name: 'Puzzle-8',
+        date: '2016',
+        desc: ['8-Puzzle game in Android. Includes automatic puzzle solver.'],
+        tags: ['android', 'java', 'game'],
+        github: 'https://github.com/aviaryan/CSwA_puzzle8'
+    },
+    // {
+    // 	id: 'nkm-server',
+    // 	name: 'NowKnowMore server',
+    // 	date: '2016',
+    // 	desc: [
+    // 		'Now Know More is a news aggregation service that allows you to follow any topic of your interest and get latest news on the same.',
+    // 		'The topic can by anything from "Good Recipes" to "Stock Market" to "Fitness Tips".',
+    // 		'The whole thing was built in 8 hrs with swagger API documentation and integrated unit testing.'],
+    // 	tags: ['backend', 'flask', 'python'],
+    // 	github: 'https://github.com/aviaryan/nkm-server'
+    // },
+    // {
+    // 	id: 'emojiui',
+    // 	name: 'EmojiUI',
+    // 	date: '2016',
+    // 	desc: ['Offline and cross-platform emoji finding tool using Electron.'],
+    // 	tags: ['npm', 'javascript', 'electron'],
+    // 	github: 'https://github.com/aviaryan/emojiui'
+    // },
+    // {
+    // 	id: 'collegare-server',
+    // 	name: 'Collegare Server',
+    // 	date: '2015',
+    // 	desc: ['Unofficial college\'s social networking platform. I worked on the backend.'],
+    // 	tags: ['php', 'backend'],
+    // 	github: 'https://github.com/aviaryan/collegare-server'
+    // },
+    // {
+    // 	id: 'brain-games',
+    // 	name: 'Brain Games',
+    // 	date: '2015',
+    // 	desc: [
+    // 		'Games to boost one\'s brain, written in Python using Pyglet. Includes 6 different exciting games.',
+    // 		'Pre-compiled binaries available for Windows.'
+    // 	],
+    // 	weight: 2,
+    // 	tags: ['python', 'game', 'gui'],
+    // 	github: 'https://github.com/aviaryan/BrainGames'
+    // },
+    // {
+    // 	id: 'pop-movies',
+    // 	name: 'Popular Movies',
+    // 	date: '2016',
+    // 	desc: ['An app to showcase trending and popular movies.'],
+    // 	tags: ['android', 'java'],
+    // 	github: 'https://github.com/aviaryan/PopularMovies'
+    // },
+    // {
+    // 	id: 'wtfeed',
+    // 	name: 'What the Feed',
+    // 	date: '2016',
+    // 	desc: [
+    // 		'What The Feed is a social media aggregration platform that helps you follow related social media accounts at once.',
+    // 		'Suppose you are interested in some topic, say "Indian Finance", WTF will automatically find the leading social ' +
+    // 		' media accounts for that topic, follow their posts and provide you with an aggregrated feed.',
+    // 		'Twitter, Instagram and Tumblr are supported at the moment.'
+    // 	],
+    // 	tags: ['python', 'backend', 'django'],
+    // 	github: 'https://github.com/iiitv/hackathon-fullstack-server'
+    // },
+    {
+    	id: 'portfolio',
+    	name: 'Portfolio',
+    	date: '2018-present',
+    	desc: [
+    		'My open source projects portfolio. Built using React, React Router and Redux.'
+    	],
+    	tags: ['web', 'react', 'javascript'],
+    	github: 'https://github.com/nabil6391/nabil6391.github.io',
+    	websites: ['https://nabil6391.github.io/']
+    },
+    {
+        id: 'findingnora',
+        name: 'Finding Nora',
+        date: '2018-present',
+        desc: [
+            'A proggesive web app Find your name in a field of letters (kids game) https://nora.now.sh'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/finding-nora'
+    },
+    {
+        id: 'samplepieshop',
+        name: 'Online store PWA sample',
+        date: '2018-present',
+        desc: [
+            'Example e-commerce site to explore PWA (Progressive Web App) use cases. https://pie-shop-app.appspot.com/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/sample-pie-shop'
+    },
+    {
+        id: 'pwagithub',
+        name: 'PWAGithub',
+        date: '2018-present',
+        desc: [
+                        'The GitHub client implemented as a Progressive Web App https://pwa-github-client.firebaseapp…'
+        ],
+        tags: ['web', 'vue', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/PWAGithub'
+    },
+    {
+        id: 'so-pwa',
+        name: 'SO PWA',
+        date: '2018-present',
+        desc: [
+             'A progressive web app to read Stack Overflow content. https://so-pwa.firebaseapp.com/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/so-pwa'
+    },
+    {
+        id: 'PWAPodcast',
+        name: 'PWAPodcast',
+        date: '2018-present',
+        desc: [
+            'A demo podcast progressive web application.'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/PWAPodcast'
+    },
+    {
+        id: 'instragram-clone',
+        name: 'React-Instagram-Clone',
+        date: '2018-present',
+        desc: [
+            'A reactive Single-Page Instagram-Clone with some new features!! '
+        ],
+        tags: ['web', 'react', 'javascript'],
+        github: 'https://github.com/nabil6391/React-Instagram-Clone-2.0'
+    },
+    {
+        id: 'sample-currency-converter',
+        name: 'Material Money',
+        date: '2018-present',
+        desc: [
+            'A sample currency conversion Progressive Web App'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/sample-currency-converter'
+    },
+    {
+        id: 'pwa-theme-woocommerce',
+        name: 'PWA E-commerce Theme',
+        date: '2018-present',
+        desc: [
+            'E-commerce Progressive Web App Theme (React & Redux) http://pwacommerce.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/pwa-theme-woocommerce'
+    },
+    {
+        id: 'profile',
+        name: 'Personal Profile Progressive Web App Card',
+        date: '2018-present',
+        desc: [
+            'Personal Profile Progressive Web App Card - Web Page https://pwafire-codelab.firebaseapp.com/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/profile'
+    },
+    {
+        id: '2048',
+        name: '2048 Pwa',
+        date: '2018-present',
+        desc: [
+            'A Progressive Web App Version of 2048 https://2048.love2dev.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/2048'
+    },
+    {
+        id: 'React-Calculator-App',
+        name: 'React Calculator App',
+        date: '2018-present',
+        desc: [
+            'The Apple MacOs/iOS calculator app rebuild with React as PWA (Progressive Web App) https://kaihotz.github.io/React-Calculator-App/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/React-Calculator-App'
+    },
+    {
+        id: 'ProgressiveWordPress',
+        name: 'Progressive WordPress',
+        date: '2018-present',
+        desc: [
+            'A Sample WordPress-based Progressive Web App https://pwp.dassur.ma'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/ProgressiveWordPress'
+    },
+    {
+        id: 'expense-tracker',
+        name: 'Personal Profile Progressive Web App Card',
+        date: '2018-present',
+        desc: [
+            'An open source PWA for expense/income tracking https://expense-tracker-demo-1.firebaseapp.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/expense-tracker'
+    },
+    {
+        id: 'ephemeral',
+        name: 'Ephemeral',
+        date: '2018-present',
+        desc: [
+            'A progressive web app for writing down words and translations as you encounter them. https://ephemeral.now.sh'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/ephemeral'
+    },
+    {
+        id: 'fastfurniture',
+        name: 'Fast Furniture',
+        date: '2018-present',
+        desc: [
+            'A Progressive Web Application Demonstration Site https://fastfurniture.love2dev.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/fastfurniture'
+    },
+    {
+        id: 'pwa-qr-code-scanner',
+        name: 'QR Code Scanner',
+        date: '2018-present',
+        desc: [
+            'Lightweight progressive web app for scanning QR codes offline https://minishlink.github.io/pwa-qr-code-scanner/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/pwa-qr-code-scanner'
+    },
+    {
+        id: 'preact-gallery',
+        name: 'Preact Gallery',
+        date: '2018-present',
+        desc: [
+            'A modern gallery experience disguised as a tiny (8kb) Preact based PWA. https://preact.gallery/'
+        ],
+        tags: ['web', 'preact', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/preact-gallery'
+    },
+
+    {
+        id: 'flappybird',
+        name: 'Flappy Bird PWa',
+        date: '2018-present',
+        desc: [
+            'Progressive Web App (PWA) implementation of Flappy Bird game. https://flappybird.love2dev.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/flappybird'
+    },
+    {
+        id: 'hextris',
+        name: 'Hextris',
+        date: '2018-present',
+        desc: [
+            '\n' +
+            'Fast paced HTML5 puzzle game inspired by Tetris! Made into a PWA so you can play on any device, anywhere. Even without the network! https://hextris.love2dev.com/'
+        ],
+        tags: ['web', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/hextris'
+    },
+    {
+        id: 'react-shrine',
+        name: 'Shrine',
+        date: '2018-present',
+        desc: [
+            '"Shrine" Progressive Web App sample built with React https://react-shrine.firebaseapp.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/react-shrine'
+    },
+    {
+        id: 'sCalc',
+        name: 'sCalc',
+        date: '2018-present',
+        desc: [
+            'A simple JavaScript Calculator Progressive Web Application (PWA) https://calc.love2dev.com'
+        ],
+        tags: ['web',  'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/sCalc'
+    },
+
+    {
+        id: 'english-accents-map',
+        name: 'English Accents Map',
+        date: '2018-present',
+        desc: [
+            'English Accents Map - A progressive web app (PWA) buit on React, Redux and Firebase https://www.englishaccentsmap.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/english-accents-map'
+    },
+    {
+        id: 'simple-trello',
+        name: 'Trello clone',
+        date: '2018-present',
+        desc: [
+            'Trello clone'
+        ],
+        tags: ['web', 'react', 'javascript'],
+        github: 'https://github.com/nabil6391/simple-trello'
+    },
+    {
+        id: 'building-a-small-pwa-with-preact-and-firebase',
+        name: 'Exercise PWA',
+        date: '2018-present',
+        desc: [
+            'You can see it in action at https://pwa-preact-firebase.firebaseapp.com,'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/building-a-small-pwa-with-preact-and-firebase'
+    },
+    {
+        id: 'whatspp-PWA',
+        name: 'Whatsapp clone',
+        date: '2018-present',
+        desc: [
+            'Progressive Web app of Whatsapp web clone'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/whatspp-PWA'
+    },
+    {
+        id: 'preact-hn',
+        name: 'Personal Profile Progressive Web App Card',
+        date: '2018-present',
+        desc: [
+            'A hacker news clone built with preact. https://preact-hn.now.sh.'
+        ],
+        tags: ['web', 'preact', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/preact-hn'
+    },
+    {
+        id: 'smaller-pictures-app',
+        name:      'Smaller Pics',
+        date: '2018-present',
+        desc: [
+            'Smaller Pics Progressive Web App https://smaller-pictures.appspot.com'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/smaller-pictures-app'
+    },
+    {
+        id: 'snapwat',
+        name: 'Snapwat',
+        date: '2018-present',
+        desc: [
+            'Photo/video doodling app for the web - a progressive web app demo https://snapw.at'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/snapwat'
+    },
+    {
+        id: 'periodic-weather-analytics',
+        name: 'Periodic Weather Analytics',
+        date: '2018-present',
+        desc: [
+            'A high performance Preact based PWA providing an overview of information from Periodic Weather.  https://use-the-platform.com/periodic-weather-analytics/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/periodic-weather-analytics'
+    },
+    {
+        id: 'uber-mobile-web',
+        name: 'Uber clone for mobile web',
+        date: '2018-present',
+        desc: [
+            'Uber clone for mobile web Live Demo: https://uberweb.herokuapp.com'
+        ],
+        tags: ['web', 'react', 'javascript'],
+        github: 'https://github.com/nabil6391/uber-mobile-web'
+    },
+    {
+        id: 'snapdrop',
+        name: 'Snapdrop',
+        date: '2018-present',
+        desc: [
+            'A Progressive Web App for local file sharing http://snapdrop.net'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/snapdrop'
+    },
+    {
+        id: 'rainbow-explorer',
+        name: 'Rainbow Exlorer',
+        date: '2018-present',
+        desc: [
+            'A 20kb Preact & Redux based Progressive Web App that translates real life color to digital color. https://use-the-platform.com/rainbow-explorer/'
+        ],
+        tags: ['web', 'preact', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/rainbow-explorer'
+    },
+    {
+        id: 'bookmarkd',
+        name: 'Bookmarkd',
+        date: '2018-present',
+        desc: [
+            'A React PWA for reading ebooks https://bookmarkd-app.surge.sh'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/bookmarkd'
+    },
+    {
+        id: 'react-simple-pwa',
+        name: 'React Simple PWA',
+        date: '2018-present',
+        desc: [
+            'Simple Progressive Web App Built with React Js. https://bosnaufal.github.io/react-simple-pwa'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/react-simple-pwa'
+    },
+    {
+        id: 'voice-memos',
+        name: 'Voice Memos',
+        date: '2018-present',
+        desc: [
+            'A Progressive Web App for recording and playing back voice memos. https://voice-memos.appspot.com/'
+        ],
+        tags: ['web', 'react', 'javascript', 'pwa'],
+        github: 'https://github.com/nabil6391/voice-memos'
+    },
+    // {
+    // 	id: 'gsearch',
+    // 	name: 'Google Search API',
+    // 	date: '2017',
+    // 	weight: 1,
+    // 	desc: [
+    // 		'Google Search unofficial API for Python with no external dependencies.',
+    // 		'Full Unicode support and works with Python 2 & 3.'
+    // 	],
+    // 	tags: ['python', 'scraping', 'pip'],
+    // 	github: 'https://github.com/aviaryan/python-gsearch',
+    // }
 ];
 
 
@@ -583,36 +682,36 @@ let projects = [
  * Sort and return
  */
 function compareDates(a, b) {
-	// current year
-	const year = new Date().getFullYear();
-	// base year - when I started development
-	const baseYear = 2013 - 1;
+    // current year
+    const year = new Date().getFullYear();
+    // base year - when I started development
+    const baseYear = 2013 - 1;
 
-	// date value generator
-	const fd = (date) => {
-		if (date.indexOf('present') > -1)
-			return year - baseYear + 1; // largest, so +1
-		else {
-			for (let yr = year; yr > baseYear; yr--) {
-				if (date.indexOf(yr.toString().substring(3)) > -1) {
-					return yr - baseYear;
-				}
-			}
-		}
-	};
+    // date value generator
+    const fd = (date) => {
+        if (date.indexOf('present') > -1)
+            return year - baseYear + 1; // largest, so +1
+        else {
+            for (let yr = year; yr > baseYear; yr--) {
+                if (date.indexOf(yr.toString().substring(3)) > -1) {
+                    return yr - baseYear;
+                }
+            }
+        }
+    };
 
-	let wta = fd(a.date) + (a.weight || 0);
-	let wtb = fd(b.date) + (b.weight || 0);
+    let wta = fd(a.date) + (a.weight || 0);
+    let wtb = fd(b.date) + (b.weight || 0);
 
-	if (wta < wtb) {
-		return 1;
-	} else if (wta > wtb) {
-		return -1;
-	} else {
-		// a comes before b in original array
-		// let comp = (a.weight || 5) <= (b.weight || 5);
-		return -1; // (comp) ? 1 : -1;
-	}
+    if (wta < wtb) {
+        return 1;
+    } else if (wta > wtb) {
+        return -1;
+    } else {
+        // a comes before b in original array
+        // let comp = (a.weight || 5) <= (b.weight || 5);
+        return -1; // (comp) ? 1 : -1;
+    }
 }
 
 projects.sort(compareDates);

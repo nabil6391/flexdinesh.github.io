@@ -1,1 +1,1 @@
-export { default } from './BrowserNotes';
+export {default} from './BrowserNotes';

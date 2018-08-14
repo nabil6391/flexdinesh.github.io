@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import './style.scss';
-import  ScrollToNext from '@components/ScrollToNext';
+import ScrollToNext from '@components/ScrollToNext';
 
 const AboutPage = (props, context) => {
-  const {
-    theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary }
-  } = context;
+    const {
+        theme: {colorPrimary, colorHighlight, bgPrimary, textPrimary}
+    } = context;
 
-  return (
-    <div className="about-page" style={{ backgroundColor: bgPrimary }}>
-      <style jsx="true">
-        {`
+    return (
+        <div className="about-page" style={{backgroundColor: bgPrimary}}>
+            <style jsx="true">
+                {`
           .highlight {
             background-color: ${colorHighlight};
           }
@@ -20,47 +19,45 @@ const AboutPage = (props, context) => {
             background-color: ${colorHighlight};
           }
         `}
-      </style>
-      <div className="content-grid">
-        <h1 style={{ color: colorPrimary }}>About</h1>
-        <div className="about-wrapper">
-          <div className="about-content" style={{ color: textPrimary }}>
-            <p>
-              I like <span className="highlight">JavaScript</span> and
-              everything web.
-            </p>
-            <p>
-              When my dev senses kick-in I build presumably{' '}
-              <span className="highlight"> awesome stuff</span>. I stay close to
-              the community and try to keep tabs with the pace at which the web
-              is evolving. I also like to{' '}
-              <span className="highlight">blog</span> what I learn.
-            </p>
-            <p>
-              I built this site <span className="highlight">from scratch</span>.
-              By scratch, I mean <i>absolutely from scratch</i>{' '}
-              <span className="highlight">
-                without any UI library/framework
-              </span>{' '}
-              (except React though) and had so much fun along the way.
-            </p>
-            <p>
-              React-Redux, Node.js, Ruby on Rails, Java, Spring Boot, Docker and
-              AWS are the main tricks up my sleeve. I am also obsessed with making the web look pretty with SASS/CSS.
-            </p>
-            <p className="text-emoji" style={{ color: colorPrimary }}>
-              \ (•◡•) /
-            </p>
-          </div>
+            </style>
+            <div className="content-grid">
+                <h1 style={{color: colorPrimary}}>About</h1>
+                <div className="about-wrapper">
+                    <div className="about-content" style={{color: textPrimary}}>
+
+                        <p>I started my career as an <span className="highlight">Android developer</span>, responsible
+                            for the complete development lifecycle of the mobile applications including designing user
+                            interface, preparing content, programming and debugging.
+                            I've been part of small and large (distributed) teams, I understood how crucial
+                            documentation, version control, and effective team communication are in terms of having a
+                            sane workflow.</p>
+
+                        <p>Today I'm working as a <span className="highlight">front-end web developer</span> and
+                            reaching a personal milestone, which is feeling confident in both sides of the spectrum to
+                            develop Web Apps from back to front alogn with their mobile counterparts.</p>
+
+                        <p>I'm working in this area using HTML5, CSS3 and Javascript and <span
+                            className="highlight">ReactJS</span> has become one of my favorite tools in web
+                            development. React-Redux, Node.js, Django, Java, Android, AWS are the main tricks up my
+                            sleeve.</p>
+
+                        <p>In the near future, I'd like to take my JS and CSS3 skills to the next level
+                            while learning more about UI/UX and <span
+                                className="highlight">Progressive Web Apps(PWA)</span>.
+                        </p>
+                        <p className="text-emoji" style={{color: colorPrimary}}>
+                            \ (•◡•) /
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <ScrollToNext pageSelector=".contact-page"/>
         </div>
-      </div>
-      <ScrollToNext pageSelector=".portfolio-page" />
-    </div>
-  );
+    );
 };
 
 AboutPage.contextTypes = {
-  theme: PropTypes.any
+    theme: PropTypes.any
 };
 
 export default AboutPage;
